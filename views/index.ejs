@@ -1,0 +1,11 @@
+<% include partials/head %>
+<main>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <h2>Blog Posts Go Here</h2>
+    <% for(var i=0; i < blogPosts.length; i++) { %>   
+    <article><h2><a href="<%= blogPosts[i].linkName %>"><%= blogPosts[i].title %></h2></a></article>
+    <% } %>
+  
+</main>
+<% include partials/footer %>
